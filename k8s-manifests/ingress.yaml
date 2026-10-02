@@ -3,12 +3,10 @@ kind: Ingress
 metadata:
   name: fortune-cookie-ingress
   namespace: default
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
+  ingressClassName: webapprouting.kubernetes.azure.com
   rules:
-  - host: fortune-cookie.local
-    http:
+  - http:
       paths:
       - path: /
         pathType: Prefix
