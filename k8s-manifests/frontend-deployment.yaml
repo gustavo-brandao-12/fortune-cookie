@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: rafaelvzago/fortune-frontend:1.0
+        image: acrm7develop.azurecr.io/argo-teste-front:latest
         ports:
         - containerPort: 80
