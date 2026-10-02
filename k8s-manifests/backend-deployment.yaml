@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: acrm7develop.azurecr.io/argo-teste:latest
+        image: acrm7develop.azurecr.io/argo-teste:1.0
         imagePullPolicy: IfNotPresent
         ports:
         - name: http
