@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: acrm7develop.azurecr.io/fortune-backend-rust:latest
+        image: acrm7develop.azurecr.io/argo-teste:latest
         imagePullPolicy: IfNotPresent
         ports:
         - name: http
