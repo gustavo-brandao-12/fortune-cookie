@@ -4,10 +4,10 @@ metadata:
   name: backend
   namespace: default
 spec:
-  elector:
-    pp: backend
+  selector:
+    app: backend
   ports:
     - protocol: TCP
       port: 8080
       targetPort: 8080
-type: ClusterIP
+  type: ClusterIP

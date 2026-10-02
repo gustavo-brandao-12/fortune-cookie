@@ -3,8 +3,6 @@ kind: Deployment
 metadata:
   name: backend
   namespace: default
-  labels:
-    app: backend
 spec:
   replicas: 1
   selector:
@@ -17,11 +15,9 @@ spec:
     spec:
       containers:
       - name: backend
-        image: acrm7develop.azurecr.io/fortune-backend-rust:1.0
-        imagePullPolicy: IfNotPresent
+        image: rafaelvzago/fortune-backend-rust:1.0
         ports:
-        - name: http
-          containerPort: 8080
+        - containerPort: 8080
         env:
         - name: API_URL
           value: "https://api.adviceslip.com/advice"
